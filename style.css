@@ -12,6 +12,10 @@
         align-items: center;
     }
 
+    html {
+        overflow-x: hidden;
+    }
+
     header h1 {
         color: #fff;
         width: 100px;
@@ -50,6 +54,8 @@
 
     .Sobre img {
         margin-top: 25px;
+        max-width: 100%;
+        height: auto;
     }
 
     .Sobre h3,
@@ -72,6 +78,11 @@
         list-style: none;
     }
 
+    .lista-tenis img {
+        width: 350px;
+        height: 250px;
+    }
+
     .lista-tenis h4,
     .lista-tenis img,
     .lista-tenis p,
@@ -80,20 +91,30 @@
     }
 
     .lista-tenis button {
-        width:100%;
+        width: 100%;
         border: none;
         background-color: #0095ff;
         color: #fff;
-        padding:5px 0;
+        padding: 5px 0;
         cursor: pointer;
     }
-    .lista-tenis p{
+
+    .lista-tenis p {
         width: 70%;
         font-size: 1.1em;
     }
-    footer{
-        width:100%;
-        height:100px;
+
+    footer {
+        width: 100%;
+        height: 100px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    #lucas {
+        display: none;
     }
 }
 
@@ -101,7 +122,470 @@
 
 
 /* Tablet */
-@media screen and (max-width:767px) {}
+@media screen and (min-width:767px) and (max-width:1023px) {
+    header {
+        background-color: #0095ff;
+        align-items: center;
+        font-size: 1em;
+
+        padding: 13px 0;
+    }
+
+    #lucas {
+        display: none;
+    }
+
+    header h1 {
+        color: #fff;
+    }
+
+    header>.container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .container nav ul {
+        list-style: none;
+        display: flex;
+
+    }
+
+    .container nav ul li {
+        margin-left: 20px;
+        font-size: 1.5em;
+    }
+
+    .container>h2,
+    .container>.Sobre {
+        display: block;
+        text-align: left;
+
+    }
+
+    .Sobre img {
+        margin-top: 25px;
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    .Sobre {
+        width: 100%;
+    }
+
+    .Sobre h3,
+    h3 {
+        text-align: left;
+        align-items: center;
+        border-bottom: 2px solid #0095ff;
+        color: #0077ff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .lista-tenis {
+        list-style: none;
+
+    }
+
+    .Sobre p {
+        text-align: left;
+        align-items: center;
+    }
+
+    .lista-tenis {
+        list-style: none;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 57%);
+        grid-gap: 2%;
+        margin-right: 90px;
+        margin-top: 20px;
+
+    }
+
+    .lista-tenis img {
+        width: 100%;
+        height: auto;
+        border: 1px solid rgba(0, 0, 0, 0.142);
+    }
+
+    .lista-tenis h4,
+    .lista-tenis img,
+    .lista-tenis p,
+    .lista-tenis button {
+        margin-top: 15px;
+    }
+
+    .lista-tenis button {
+        width: 90%;
+        border: none;
+        background-color: #0095ff;
+        color: #fff;
+        padding: 13px 0;
+        cursor: pointer;
+    }
+
+    .lista-tenis p {
+        width: 70%;
+        font-size: 1.1em;
+    }
+
+    footer {
+        width: 100%;
+        height: 100px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+}
 
 /* Desktop */
-@media screen and (max-width:767px) {}
+@media screen and (min-width:1024px) {
+    header {
+        background-color: #0095ff;
+        padding: 16px 0;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 60%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container>h1 {
+        font-size: 3em;
+        color: #fff;
+        align-items: center;
+    }
+
+    .container nav ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+    .container nav ul li {
+        margin-left: 20px;
+        font-size: 1.5em;
+
+    }
+
+    .Sobre {
+        display: flex;
+        margin-top: 29px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    .container-Loja img {
+        max-width: 500px;
+        height: auto;
+    }
+
+    .container-sobre p,
+    .container-sobre h2 {
+        text-align: left;
+
+    }
+
+    .container-sobre p {
+        margin-top: 20px;
+    }
+
+    .container-sobre h2,
+    .lista-tenis h3,
+    .desktop {
+        border-bottom: 2px solid #0095ff;
+        padding-bottom: 14px;
+        color: #0077ff;
+    }
+
+    .container-sobre {
+        margin-left: 23px;
+    }
+
+    footer {
+        width: 100%;
+        height: 100px;
+    }
+
+
+
+    .lista-tenis h4,
+    .lista-tenis h3 {
+        color: #0077ff;
+    }
+
+    .lista-tenis h3 {
+        text-align: left;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .container-sobre h3 {
+        color: #0077ff;
+        text-align: left;
+        border-bottom: 1px solid #0077ff;
+        padding-bottom: 20px;
+    }
+
+    .lista-tenis {
+        list-style: none;
+    }
+
+    .lista-tenis li img {
+        border: 1px solid black;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tables {
+        display: none;
+    }
+
+    .desktop {
+        margin-bottom: 90px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .lista-tenis>li>h4 {
+        color: black;
+        text-align: left;
+    }
+
+    .lista-tenis>li>p {
+        color: black;
+        text-align: left;
+    }
+
+    .lista-tenis li {
+        border: 1px solid #ccc;
+        /* Borda ao redor de cada produto */
+        padding: 20px;
+        text-align: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1px;
+    }
+
+    .lista-tenis>li>button {
+        color: rgb(255, 255, 255);
+        text-align: left;
+        text-align: center;
+        border: none;
+        width: 100%;
+        background-color: #0077ff;
+        padding: 16px 0;
+        margin-right: 3px;
+    }
+
+    .grid-level {
+        display: grid;
+        grid-template-columns: repeat(4, 100%);
+        /* Configuração do grid */
+        gap: 1px;
+        /* Espaçamento entre os produtos */
+    }
+
+    .lista-tenis {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lista-tenis {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) and (orientation: landscape) {
+    header {
+        background-color: #0095ff;
+        padding: 16px 0;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+
+    .container>h1 {
+        font-size: 3em;
+        color: #fff;
+        align-items: center;
+    }
+
+    .container nav ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+    .container nav ul li {
+        margin-left: 20px;
+        font-size: 1.5em;
+
+    }
+
+    .Sobre {
+        display: flex;
+        margin-top: 29px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    .container-Loja img {
+        max-width: 500px;
+        height: auto;
+    }
+
+    .container-sobre p,
+    .container-sobre h2 {
+        text-align: left;
+
+    }
+
+    .container-sobre p {
+        margin-top: 20px;
+    }
+
+    .container-sobre h2,
+    .lista-tenis h3,
+    .desktop {
+        border-bottom: 2px solid #0095ff;
+        padding-bottom: 14px;
+        color: #0077ff;
+    }
+
+    .container-sobre {
+        margin-left: 23px;
+    }
+
+    footer {
+        width: 100%;
+        height: 100px;
+    }
+
+
+
+    .lista-tenis h4,
+    .lista-tenis h3 {
+        color: #0077ff;
+    }
+
+    .lista-tenis h3 {
+        text-align: left;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .container-sobre h3 {
+        color: #0077ff;
+        text-align: left;
+        border-bottom: 1px solid #0077ff;
+        padding-bottom: 20px;
+    }
+
+    .lista-tenis {
+        list-style: none;
+    }
+
+    .lista-tenis li img {
+        border: 1px solid black;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tables {
+        display: none;
+    }
+
+    .desktop {
+        margin-bottom: 90px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .lista-tenis>li>h4 {
+        color: black;
+        text-align: left;
+    }
+
+    .lista-tenis>li>p {
+        color: black;
+        text-align: left;
+    }
+
+    .lista-tenis li {
+        border: 1px solid #ccc;
+        /* Borda ao redor de cada produto */
+        padding: 20px;
+        text-align: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1px;
+    }
+
+    .lista-tenis>li>button {
+        color: rgb(255, 255, 255);
+        text-align: left;
+        text-align: center;
+        border: none;
+        width: 100%;
+        background-color: #0077ff;
+        padding: 16px 0;
+        margin-right: 3px;
+    }
+
+    .grid-level {
+        display: grid;
+        grid-template-columns: repeat(4, 100%);
+        /* Configuração do grid */
+        gap: 1px;
+        /* Espaçamento entre os produtos */
+    }
+
+    .lista-tenis {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lista-tenis {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+
+    }
+}
