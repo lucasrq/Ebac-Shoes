@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Smartphone */
+@media screen and (max-width:767px) {
+    header {
+        background-color: #0095ff;
+        align-items: center;
+    }
+
+    header h1 {
+        color: #fff;
+        width: 100px;
+        margin: 15px;
+    }
+
+    header a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .container {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .container nav ul {
+        list-style: none;
+    }
+
+    .container nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+
+    .container>h2,
+    .container>.Sobre {
+        display: block;
+        text-align: left;
+
+    }
+
+    .Sobre img {
+        margin-top: 25px;
+    }
+
+    .Sobre h3,
+    h3 {
+        text-align: left;
+        align-items: center;
+        border-bottom: 2px solid #0095ff;
+        color: #0077ff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .Sobre p {
+        text-align: left;
+        align-items: center;
+    }
+
+    .lista-tenis {
+        list-style: none;
+    }
+
+    .lista-tenis h4,
+    .lista-tenis img,
+    .lista-tenis p,
+    .lista-tenis button {
+        margin-top: 15px;
+    }
+
+    .lista-tenis button {
+        width:100%;
+        border: none;
+        background-color: #0095ff;
+        color: #fff;
+        padding:5px 0;
+        cursor: pointer;
+    }
+    .lista-tenis p{
+        width: 70%;
+        font-size: 1.1em;
+    }
+    footer{
+        width:100%;
+        height:100px;
+    }
+}
+
+
+
+
+/* Tablet */
+@media screen and (max-width:767px) {}
+
+/* Desktop */
+@media screen and (max-width:767px) {}
