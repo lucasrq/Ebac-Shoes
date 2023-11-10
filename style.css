@@ -419,9 +419,7 @@
 
     .lista-tenis {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px;
-
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
 }
@@ -571,9 +569,8 @@
     .grid-level {
         display: grid;
         grid-template-columns: repeat(4, 100%);
-        /* Configuração do grid */
+        /* Configração do grid */
         gap: 1px;
-        /* Espaçamento entre os produtos */
     }
 
     .lista-tenis {
